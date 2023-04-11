@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.outer {
+    display: flex;
+    
+}
+
+
+.inner {
+    width: 50%;
+    height: 6rem;
+    margin: 10px;
+    border: 2px black solid;
+}
