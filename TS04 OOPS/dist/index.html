@@ -7,16 +7,29 @@
     <title>Document</title>
   </head>
   <body>
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.0/system.js"
       integrity="sha512-zcA8/bnlwyOoZ5fkwGUCae0TxnkRCPf1zGZMvbLxDZEwnkZx1ea88wlKe1gN1Ppt39A0Fa9huGaU3oM3V+ex3A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
-    <script>
+    ></script> -->
+
+    <!-- <script>
       System.import("./bundle.js")
-        .than(() => System.import("app"))
+        .than(() => System.import("Main"))
         .catch(console.error.bind(console));
+    </script> -->
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.js"
+      integrity="sha512-GXeZAy7o8/TVgxROszQUQjf+5KxVqowGy8ZJrI/ZdUmk1si/AP0zuix4NzkVdd1wJQ7LFNHnSb7RBHqa5nOLDA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="./bundle.js"></script>
+    <script>
+      require(["Main"]);
     </script>
   </body>
 </html>
