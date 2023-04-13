@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/systemjs/0.21.0/system.js"
+      integrity="sha512-zcA8/bnlwyOoZ5fkwGUCae0TxnkRCPf1zGZMvbLxDZEwnkZx1ea88wlKe1gN1Ppt39A0Fa9huGaU3oM3V+ex3A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      System.import("./bundle.js")
+        .than(() => System.import("app"))
+        .catch(console.error.bind(console));
+    </script>
+  </body>
+</html>
